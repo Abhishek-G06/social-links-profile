@@ -1,0 +1,143 @@
+:root {
+    /* Colors */
+    /* Primary */
+
+    --Green: hsl(75, 94%, 57%);
+
+    /* ### Neutral */
+
+    --Grey: hsl(0, 0%, 20%);
+    --White: hsl(0, 0%, 100%);
+    --Off-Black: hsl(0, 0%, 8%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+html{
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none; 
+}
+
+body {
+    margin-block-end: 0;
+    -webkit-font-smoothing: antialized;
+}
+
+body {
+    margin-block-end: 0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Off-Black);
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.card {
+    margin: 0;
+    width: 290px;
+    height: 490px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: var(--Dark-Grey)   
+}
+
+.circle{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;  
+}
+
+.circle img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.name {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--White);
+    margin-bottom: 10px;
+}
+
+.address {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--Green);
+    margin-bottom: 20px;
+}
+
+.introduction {
+    margin-bottom: 12px; 
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--White);
+}
+
+.social-button {
+    width: 100%;
+    font-weight: 600;
+    color: var(--White);
+    margin: 3px;
+    padding: 10px 15px;
+    background-color: var(--Grey);
+    border-color: transparent;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.social-button:hover {
+    background-color: var(--Green);
+    color: var(--Off-Black);
+}
+
+.attribution { 
+    margin-top: 30px;
+    color: white;
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 375px) {
+    .card {
+        width: 100%;
+    }
+
+    .social-button {
+        width: auto; 
+    }
+}
